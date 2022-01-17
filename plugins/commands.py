@@ -2,7 +2,6 @@ import os
 import logging
 import random
 import asyncio
-from Translation import START_TXT
 from pyrogram import Client, filters
 from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
