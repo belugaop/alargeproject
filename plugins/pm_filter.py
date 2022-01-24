@@ -348,10 +348,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{files.file_name}"
         buttons = [
             [
-                InlineKeyboardButton('ՏႮᏢᏢϴᎡͲ 🔥', url='https://t.me/mksupport1')
+                InlineKeyboardButton('ՏႮᏢᏢϴᎡͲ 🔥', url='https://t.me/JackXSupport')
             ],
             [
-                InlineKeyboardButton('ҒᏆᎡՏͲ ՏᎻϴᏔᎬᎡՏ', url=f'https://t.me/firstshowers')
+                InlineKeyboardButton('ALL NATON MOVIE', url=f'https://t.me/allnationmovies')
             ]
             ]
             
@@ -369,7 +369,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     reply_markup=InlineKeyboardMarkup(buttons)
                     )
-                await query.answer(f'Hey {query.from_user.first_name}ᏟᎻᎬᏟᏦ ᏢᎷ Ꮖ ᎻᎪᏙᎬ ՏᎬΝͲ ҒᏆᏞ Ꭼ ᏆΝ ᏢᎷ💖',show_alert = True)
+                await query.answer(f'Hey {query.from_user.first_name}ᏟᎻᎬᏟᏦ ᏢᎷ Ꮖ ᎻᎪᏙᎬ ՏᎬΝͲ ҒᏆᏞᎬ ᏆΝ ᏢᎷ💖',show_alert = True)
         except UserIsBlocked:
             await query.answer(f'Hey {query.from_user.first_name}ႮΝᏴᏞϴᏟᏦ ͲᎻᎬ ᏴϴͲ ҒᏆՏᎡͲ!',show_alert = True)
         except PeerIdInvalid:
@@ -399,11 +399,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{title}"
         buttons = [
             [
-                InlineKeyboardButton('support', url='https://t.me/mksupport1'),
-                InlineKeyboardButton('channel', url='https://t.me/mksupport1')
+                InlineKeyboardButton('support', url='https://t.me/JackXSupport'),
+                InlineKeyboardButton('channel', url='https://t.me/jack_update')
             ],
             [
-                InlineKeyboardButton('Series & Movie Club', url=f'https://t.me/mksupport1')
+                InlineKeyboardButton('ALL NATION MOVIE', url=f'https://t.me/allnationmovies')
             ]
             ]
         await query.answer()
@@ -458,9 +458,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴛ-ɢʀᴀᴘʜ', callback_data='tgraph'),
             ],[
             InlineKeyboardButton('𝖢𝗈𝗏𝗂𝖽', callback_data='covid'),
-            InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('Uʀʟ Sʜᴏʀᴛɴᴇʀ', callback_data='shortner'),
             InlineKeyboardButton('Zᴏᴍʙɪᴇs', callback_data='zombies'),
+            InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -472,7 +472,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons= [[
             InlineKeyboardButton('🔥ՏͲᎪͲႮՏ', callback_data='stats'),
-            InlineKeyboardButton('ՏϴႮᎡᏟᎬ💾', callback_data='source')
             ],[
             InlineKeyboardButton('ᏟϴᎷᎷᎪΝᎠՏ❓', callback_data='help')
             ],[
